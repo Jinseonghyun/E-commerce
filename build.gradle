@@ -33,6 +33,10 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    // jwt 축가
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5' // JWT 생성, 파싱, 검증 등을 위한 주요 인터페이스와 클래스를 제공
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'  // JWT 처리 로직을 포함하고 있어, 런타임에 필요
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5' // JWT의 페이로드를 JSON으로 직렬화/역직렬화하는 데 사용
 }
 
 tasks.named('test') {
