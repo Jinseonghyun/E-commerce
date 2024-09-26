@@ -1,5 +1,6 @@
 package com.ecommerce.filters;
 
+import com.ecommerce.services.jwt.UserDetailsServiceImpl;
 import com.ecommerce.utils.JwtUtil;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
